@@ -1,1 +1,6 @@
 # NumPy_arrays
+
+For this project I used NumPy. I read in a text file containing 125,000 randomly generated integers ranging in value from 1 to 9999 and created a 50x50x50 array with the integers. Then:
+1.	I consider every possible contiguous 3x3x3 cube within the larger 50x50x50 cube. I found the cube that has the greatest sum of the 27 elements that make it up. I print the sum of the elements of that sub cube. I also print the coordinate of the corner of the sub cube which is closest to the origin.
+2.	I consider every possible contiguous 10x10x10 cube within the larger 50x50x50 cube. I create a dictionary of the sub cubes that have the same sum in the elements that make it up. The dictionary key is the sum and the dictionary values are the list of cubes with the same sum using the coordinate of the corner of the sub cube which is closest to the origin. I print the dictionary key and number of sub cubes in the list.
+3.	I create a new 2d array. Each cell of this array contains the sum of the of the 50 integers in the corresponding row. So the cell at (0,0) contains the sums of integers 0-49, etc. I print out this array. It shows the 9 cells in each corner of the 2d array, representing the edges.
